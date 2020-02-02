@@ -27,7 +27,7 @@ public class LogbackLoggerManager extends LogManager {
             File cfgDir = new File(new URL(logging).getPath()).getParentFile();
 
             final String logbackFileName = System.getProperty(
-                    "me.janario.logback.fileName", "logback.xml");
+                    "me.janario.logback.fileName", "logback-default.xml");
             File logbackDefault = new File(cfgDir, logbackFileName);
 
             //force to avoid custom modules to change auto detection
