@@ -5,10 +5,10 @@
 # Install: #
 
 ### copy ###
-*  standalone/configuration/logging.properties ([source](https://github.com/leandrodelsole/wildfly-logback-subsystem/blob/master/src/test/java/examples/logging.properties))
+*  standalone/configuration/logging.properties ([source](https://github.com/bzion-tech/wildfly-logback-subsystem/blob/master/src/test/java/examples/logging.properties))
 
 ### copy or create yours ###
-*  standalone/configuration/logback-default.xml ([sample](https://github.com/leandrodelsole/wildfly-logback-subsystem/blob/master/src/test/java/examples/logback-default.xml))
+*  standalone/configuration/logback-default.xml ([sample](https://github.com/bzion-tech/wildfly-logback-subsystem/blob/master/src/test/java/examples/logback-default.xml))
    * caution: not all logback syntax is supported in this file, see known issues
 
 ### standalone/configuration/standalone.xml ###
