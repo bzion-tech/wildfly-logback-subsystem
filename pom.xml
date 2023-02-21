@@ -128,6 +128,7 @@
                                 <copy file="${lib.dir}/org/slf4j/slf4j-api/${slf4j.version}/slf4j-api-${slf4j.version}.jar" todir="${layer.dir}/ch/qos/logback/main" />
 
                                 <!--Slf4j bridges-->
+                                <copy file="${lib.dir}/org/slf4j/log4j-over-slf4j/${slf4j.version}/log4j-over-slf4j-${slf4j.version}.jar" todir="${layer.dir}/org/jboss/log4j/logmanager/main" />
                                 <copy file="${lib.dir}/org/slf4j/jul-to-slf4j/${slf4j.version}/jul-to-slf4j-${slf4j.version}.jar" todir="${layer.dir}/org/jboss/logging/jul-to-slf4j-stub/main" />
 
                                 <!--wildfly-logging-->
