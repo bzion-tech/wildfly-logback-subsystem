@@ -1,5 +1,13 @@
 package me.janario.logback.deployment;
 
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
+import org.slf4j.helpers.Util;
+
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.selector.ContextSelector;
@@ -9,15 +17,9 @@ import ch.qos.logback.classic.util.ContextInitializer;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.Loader;
 import ch.qos.logback.core.util.StatusPrinter;
+
 import me.janario.logback.deployment.impl.ContextualAppenderAttachable;
 import me.janario.logback.deployment.impl.ContextualLevelDecisionTurboFilter;
-import org.slf4j.helpers.Util;
-
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 
 /**
  * @author Janario Oliveira
@@ -93,7 +95,7 @@ public class LogbackContextSelector implements ContextSelector {
             //configureByResource calls recursive getLoggerContext
             threadContext.set(loggerContext);
             try {
-                new ContextInitializer(loggerContext).configureByResource(logbackXml);
+                new ContextInitializer(loggerContext).autoConfig();
             } catch (JoranException je) {
                 Util.report("Failed to auto configure default logger context", je);
             } finally {
