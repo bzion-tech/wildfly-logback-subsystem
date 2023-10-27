@@ -3,6 +3,7 @@
     <resources>
         <resource-root path="logback-classic-${logback.version}.jar"/>
         <resource-root path="logback-core-${logback.version}.jar"/>
+        <resource-root path="slf4j-api-${slf4j.version}.jar"/>
     </resources>
     <dependencies>
         <module name="org.slf4j"/>
