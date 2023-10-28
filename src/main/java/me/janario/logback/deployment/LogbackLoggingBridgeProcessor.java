@@ -19,7 +19,6 @@ public class LogbackLoggingBridgeProcessor implements DeploymentUnitProcessor {
             "org.slf4j",
             "org.slf4j.impl",
             "org.jboss.logging.jul-to-slf4j-stub",
-            "org.apache.log4j",
             "org.apache.commons.logging",
             "org.jboss.logging",
     };
