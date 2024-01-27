@@ -49,7 +49,6 @@
              as it will break otherwise.
         -->
         <module name="org.apache.xalan" services="import" optional="true"/>
-        <module name="org.apache.xerces" services="import"/>
         <module name="org.codehaus.woodstox" services="import"/>
         <!-- END JAXP default dependencies -->
 
