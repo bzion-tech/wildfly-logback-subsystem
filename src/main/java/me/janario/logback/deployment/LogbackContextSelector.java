@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import org.slf4j.helpers.Util;
+import org.slf4j.helpers.Reporter;
 
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
@@ -97,7 +97,7 @@ public class LogbackContextSelector implements ContextSelector {
             try {
                 new ContextInitializer(loggerContext).autoConfig();
             } catch (JoranException je) {
-                Util.report("Failed to auto configure default logger context", je);
+                Reporter.error("Failed to auto configure default logger context", je);
             } finally {
                 threadContext.remove();
             }

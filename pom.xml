@@ -4,7 +4,7 @@
 
     <groupId>me.janario</groupId>
     <artifactId>wildfly-logback-subsystem</artifactId>
-    <version>3.3.0</version>
+    <version>3.4.0</version>
 
     <name>WildFly: Logback Subsystem Artifact</name>
 
@@ -14,18 +14,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
 
-        <wildfly.version>30.0.0.Final</wildfly.version>
-        <wildfly-core.version>22.0.1.Final</wildfly-core.version>
+        <wildfly.version>31.0.0.Final</wildfly.version>
+        <wildfly-core.version>23.0.1.Final</wildfly-core.version>
 
         <module.name>me.janario.logback</module.name>
 
         <logback.version>1.4.11</logback.version>
 
         <!--Same version of WildFly module-->
-        <slf4j.version>2.0.9</slf4j.version>
+        <slf4j.version>2.0.11</slf4j.version>
         <jboss-logging.version>3.5.3.Final</jboss-logging.version>
         <janino.version>3.1.8</janino.version>
-        <apache.logging.log4j.version>2.19.0</apache.logging.log4j.version>
+        <apache.logging.log4j.version>2.22.1</apache.logging.log4j.version>
     </properties>
 
     <developers>
